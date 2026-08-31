@@ -130,6 +130,36 @@ h1 {
   padding-bottom: 64px;
 }
 
+.recommendation {
+  padding: 32px 0;
+  border-top: 1px solid var(--border);
+}
+
+.recommendation img {
+  display: block;
+  width: min(90%, 640px);
+  height: auto;
+  margin-bottom: 24px;
+}
+
+.recommendation .recommendation-image-portrait {
+  width: min(56%, 396px);
+}
+
+.recommendation h2 {
+  margin: 0 0 12px;
+  font-size: 24px;
+}
+
+.recommendation p {
+  margin: 0 0 12px;
+  color: var(--muted);
+}
+
+.recommendation p:last-child {
+  margin-bottom: 0;
+}
+
 .stay-option {
   padding: 0 0 48px;
 }
@@ -144,6 +174,10 @@ h1 {
   width: min(90%, 640px);
   height: auto;
   margin-bottom: 24px;
+}
+
+.stay-option .stay-image-portrait {
+  width: min(56%, 396px);
 }
 
 .stay-option h2 {
