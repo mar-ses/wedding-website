@@ -6,6 +6,3 @@ Evening: apero at the beach
 16:00 - 18:00 Apero
 18:00 - 20:30 Dinner
 20:30 - 1:00 Party
-
-# Sunday brunch (location tbd)
-11:00 Brunch
