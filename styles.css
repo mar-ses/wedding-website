@@ -320,9 +320,8 @@ body:has(.site-nav a[href="rsvp.html"][aria-current="page"]) {
   grid-column: 1 / -1;
   display: block;
   width: 100%;
-  height: clamp(280px, 39vw, 480px);
+  height: auto;
   margin-bottom: 20px;
-  object-fit: cover;
   filter: saturate(0.72) contrast(0.94);
 }
 
@@ -359,14 +358,38 @@ body:has(.site-nav a[href="rsvp.html"][aria-current="page"]) {
   grid-column: 1 / -1;
   display: block;
   width: 100%;
-  height: clamp(280px, 39vw, 480px);
+  height: auto;
   margin-bottom: 20px;
-  object-fit: cover;
   filter: saturate(0.72) contrast(0.94);
 }
 
 .stay-option .stay-image-portrait {
   width: min(56%, 396px);
+}
+
+.recommendation {
+  padding: 34px 0 56px;
+}
+
+.recommendation + .recommendation {
+  border-top: 1px solid var(--line);
+}
+
+.recommendation img {
+  display: block;
+  width: min(80%, 520px);
+  height: auto;
+  margin-bottom: 24px;
+}
+
+.recommendation .recommendation-image-portrait {
+  width: min(60%, 340px);
+}
+
+.recommendation h2 {
+  margin: 0 0 16px;
+  font-size: 26px;
+  letter-spacing: -0.02em;
 }
 
 .stay-option h2,
@@ -564,10 +587,6 @@ body:has(.site-nav a[href="rsvp.html"][aria-current="page"]) {
   .day-location,
   .timeline {
     grid-column: 1;
-  }
-
-  .stay-option img {
-    height: 70vw;
   }
 
   .timeline li {
