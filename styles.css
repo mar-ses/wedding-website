@@ -127,7 +127,7 @@ main,
   gap: 9px;
   padding: 5px 0 4px;
   border-bottom: 1px solid currentColor;
-  transition: color 160ms ease, gap 160ms ease;
+  transition: color 160ms ease;
 }
 
 .site-nav a[target="_blank"]::after {
@@ -145,7 +145,6 @@ main,
 }
 
 .site-nav a[target="_blank"]:hover {
-  gap: 14px;
   color: var(--blue);
 }
 
@@ -172,24 +171,9 @@ main,
   position: relative;
   grid-column: 1;
   grid-row: 1;
-  align-self: end;
+  align-self: center;
   z-index: 2;
   padding: 48px 0 0;
-}
-
-.hero::after {
-  grid-column: 1;
-  grid-row: 2;
-  align-self: start;
-  justify-self: end;
-  width: clamp(130px, 17vw, 220px);
-  aspect-ratio: 1;
-  background: var(--flower-blue-stem) center / contain no-repeat;
-  content: "";
-  mix-blend-mode: multiply;
-  opacity: 0.72;
-  pointer-events: none;
-  transform: rotate(-7deg);
 }
 
 h1,
@@ -244,7 +228,7 @@ h3 {
 
 .hero-image {
   grid-column: 2;
-  grid-row: 1 / span 2;
+  grid-row: 1;
   display: block;
   width: min(100%, 680px);
   aspect-ratio: 1;
@@ -337,13 +321,15 @@ body:has(.site-nav a[href="recommendations.html"][aria-current="page"]) .page-he
 
 .stay-option,
 .day,
-.faq-item {
+.faq-item,
+.recommendation {
   position: relative;
 }
 
 .stay-option + .stay-option::before,
 .day + .day::before,
-.faq-item + .faq-item::before {
+.faq-item + .faq-item::before,
+.recommendation + .recommendation::before {
   position: absolute;
   top: 0;
   left: 50%;
@@ -419,10 +405,6 @@ body:has(.site-nav a[href="recommendations.html"][aria-current="page"]) .page-he
 
 .recommendation {
   padding: 34px 0 56px;
-}
-
-.recommendation + .recommendation {
-  border-top: 1px solid var(--line);
 }
 
 .recommendation img {
@@ -575,22 +557,13 @@ body:has(.site-nav a[href="recommendations.html"][aria-current="page"]) .page-he
     padding: 0;
   }
 
-  .hero::after {
-    grid-column: 1;
-    grid-row: 2;
-    justify-self: end;
-    width: 150px;
-    margin-right: 4vw;
-    opacity: 0.45;
-  }
-
   .hero h1 {
     font-size: clamp(55px, 16vw, 82px);
   }
 
   .hero-image {
     grid-column: 1;
-    grid-row: 3;
+    grid-row: 2;
     width: min(100%, 680px);
   }
 
