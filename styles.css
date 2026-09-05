@@ -433,6 +433,11 @@ body:has(.site-nav a[href="recommendations.html"][aria-current="page"]) .page-he
   letter-spacing: -0.02em;
 }
 
+.stay-option h3 {
+  margin: 32px 0 8px;
+  font-size: 20px;
+}
+
 .stay-option p {
   max-width: 570px;
   margin: 4px 0 0;
